@@ -1,6 +1,8 @@
 html {
   background-color: #fff;
   font-family: "Libre Baskerville", serif;
+  font-family: Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .masthead {
@@ -14,8 +16,8 @@ html {
 }
 
 .logo-text {
-  display: inline-block;
   width: 9em;
+  font-family: Roboto, sans-serif;
 }
 
 .nav {
@@ -27,8 +29,20 @@ html {
   text-decoration: none;
 }
 
+nav li.active a {
+  color: #414141;
+}
+
+nav a:hover {
+  color: #414141;
+}
+
 .banner {
   background-color: #A000FF;
+}
+
+.masthead {
+  text-align: center;
 }
 
 
@@ -44,6 +58,59 @@ article img {
   background-color: grey;
 }
 
+.social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 12px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #A000FF;
+  transition: transform 1s;
+  margin: 0 5px;
+  background-position: 50%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
+.social.facebook {
+  background-image: url("../images/facebook.png");
+}
+
+.social.instagram {
+  background-image: url("../images/instagram.png");
+}
+
+.social.twitter {
+  background-image: url("../images/twitter.png");
+}
+
+#social-wrapper {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hr-row::before,
+.hr-row::after {
+  display: inline-block;
+  width: 40%;
+  height: 2px;
+  vertical-align: middle;
+  border-radius: 20px;
+  background: #fff;
+  content: "";
+}
+
+.hr-row span {
+  color: #fff;
+}
+
 .footer {
   background-color: #414141;
   border-top: .3rem solid #fff;
@@ -53,4 +120,45 @@ article img {
 hr {
   border-top: 2px solid #fff;
   border-radius: 25px;
+}
+
+.sign-in-back {
+  background-color: #A000FF;
+}
+
+h2 {
+  color: #fff;
+}
+
+.button {
+  border-color: #fff;
+  background-color: #39F7AE;
+  border-radius: 50px;
+  min-width: 150px;
+}
+
+input {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0;
+  text-align: center;
+  height: 50px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.card {
+  background-color: #cecece;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .masthead {
+    text-align: left;
+  }
+
 }
