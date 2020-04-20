@@ -94,6 +94,7 @@ article img {
   justify-content: space-between;
   max-width: 400px;
   margin: 0 auto;
+
 }
 
 .hr-row::before,
@@ -107,14 +108,31 @@ article img {
   content: "";
 }
 
+.line {
+  width: 100%;
+  background: #fff;
+  height: 2px;
+}
+
 .hr-row span {
   color: #fff;
 }
 
-.footer {
+.footer-logo {
+  margin: 25px 0;
+}
+
+footer {
   background-color: #414141;
   border-top: .3rem solid #fff;
   color: #fff;
+}
+
+footer ul {
+  margin-top: 25px;
+}
+footer li {
+  padding: 5px;
 }
 
 hr {
@@ -126,7 +144,7 @@ hr {
   background-color: #A000FF;
 }
 
-h2 {
+.title-white {
   color: #fff;
 }
 
@@ -155,10 +173,65 @@ input:focus {
   border-radius: 8px;
 }
 
+.divide {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+.img-flex {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul span {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+
+  .img-flex {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .divide {
+    display: flex;
+
+  }
+
+  .divide.reverse {
+    flex-direction: row-reverse;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-social-left ul {
+    text-align: left;
+  }
+
+  .footer-social-right ul li {
+    margin: 0 10px;
+  }
+
+
+}
+
+
 @media only screen and (min-width: 60em) {
 
   .masthead {
     text-align: left;
   }
+
+
 
 }
