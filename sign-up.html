@@ -8,7 +8,6 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Roboto:900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,14 +33,15 @@
     </div>
   </header>
 
-  <section class="sign-in-back contact pad-t-2 pad-b-2 text-center island">
+  <main role="main" id="main" tabindex="0">
+    <section class="sign-in-back contact pad-t-2 pad-b-2 text-center island">
       <div class="max-length">
         <h2 class="title-white pad-b">To continue, sign in with</h2>
 
         <ul id="social-wrapper" class="list-group pad-bottom">
-            <li class="social facebook"><a href="https://www.facebook.com/"></a></li>
-            <li class="social instagram"><a href="https://www.instagram.com/"></a></li>
-            <li class="social twitter"><a href="https://www.twitter.com/"></a></li>
+            <li class="social facebook"><a href="https://www.facebook.com/" aria-label="Read more about facebook"></a></li>
+            <li class="social instagram"><a href="https://www.instagram.com/" aria-label="Read more about instagram"></a></li>
+            <li class="social twitter"><a href="https://www.twitter.com/" aria-label="Read more about twitter"></a></li>
         </ul>
 
         <div class="hr-row pad-bottom">
@@ -87,14 +87,46 @@
             </div>
             <div class="island-half micro">
               <input type="checkbox" id="agree" name="agree">
-
-              <p>
-                I agree to the <a href="#">Term & Conditions</a> and <a href="#">Privacy Policy</a>
-              </p>
+              <p>I agree to the <a href="#">Term & Conditions</a> and <a href="#">Privacy Policy</a></p>
             </div>
           </form>
         </div>
       </section>
+    </main>
+
+    <div aria-hidden="true" hidden>
+      <footer class="gutter hidden" role="contentinfo">
+        <div class="links">
+          <div class="footer-social-left">
+            <div class="footer micro text-center island-1-2">
+              <div class="footer-logo">
+                <i class="icon i-32 push-r-1-4"><img src="images/icon-shiba.png" alt=""></i>
+                <span class="logo-text giga icon-label text-left">PET PAW</span>
+              </div>
+              <ul class="list-group mega push-0">
+                <li class="active"><a class="ib gutter-1-4" href="#"><span>Home</span></a></li>
+                <li><a class="ib gutter-1-4" href="#"><span>Tour</span></a></li>
+                <li><a class="ib gutter-1-4" href="#"><span>Sign In / Sign Up</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social-right text-center">
+            <div class="title-white island giga bold">Follow Us</div>
+
+            <ul class="list-group pad-bottom gutter">
+                <li class="social facebook"><a href="https://www.facebook.com/"></a></li>
+                <li class="social instagram"><a href="https://www.instagram.com/"></a></li>
+                <li class="social twitter"><a href="https://www.twitter.com/"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="text-center pad-t-1-4 pad-bottom-1-4">
+          <span class="push-0">© PET PAW</span>
+        </div>
+      </footer>
+    </div>
 
 </body>
 </html>

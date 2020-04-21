@@ -2,13 +2,14 @@ html {
   background-color: #fff;
   font-family: "Libre Baskerville", serif;
   font-family: Roboto, sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .masthead {
-  background-color: #18BCFD;
+  background-color: #18bcfd;
   border-bottom: .3rem solid #fff;
   color: #fff;
+  text-align: center;
 }
 
 .logo {
@@ -43,7 +44,7 @@ nav li a:hover {
 }
 
 .banner {
-  background-color: #A000FF;
+  background-color: #a000ff;
   min-height: 250px;
   padding: 15px;
 }
@@ -52,14 +53,9 @@ section img.header {
   max-width: 100%;
 }
 
-.masthead {
-  text-align: center;
-}
-
-
 .btn-banner {
   border-color: #fff;
-  background-color: #39F7AE;
+  background-color: #39F7ae;
   border-radius: 50px;
 }
 
@@ -76,12 +72,11 @@ article img {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 12px;
   border-radius: 50%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px;
   box-sizing: border-box;
-  font-size: 24px;
-  color: #A000FF;
+  font-size: 1.5rem;
+  color: #a000ff;
   transition: transform 1s;
-  margin: 0 5px;
   background-position: 50%;
   background-size: 30px 30px;
   background-repeat: no-repeat;
@@ -143,7 +138,6 @@ h4 {
    object-fit: cover;
 }
 
-
 #social-wrapper {
   list-style-type: none;
   display: flex;
@@ -201,7 +195,7 @@ hr {
 }
 
 .sign-in-back {
-  background-color: #A000FF;
+  background-color: #a000ff;
 }
 
 .title-white {
@@ -210,7 +204,7 @@ hr {
 
 .button {
   border-color: #fff;
-  background-color: #39F7AE;
+  background-color: #39F7ae;
   border-radius: 50px;
   min-width: 150px;
 }
@@ -238,7 +232,7 @@ input:focus {
   margin: 0 auto;
 }
 
-.img-flex {
+.img-fix {
   max-width: 400px;
   margin: 0 auto;
 }
@@ -277,16 +271,12 @@ input:focus {
     margin: 0 10px;
   }
 
-
 }
-
 
 @media only screen and (min-width: 60em) {
 
   .masthead {
     text-align: left;
   }
-
-
 
 }
