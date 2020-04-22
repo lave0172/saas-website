@@ -254,6 +254,10 @@ input:focus {
   margin: 0 auto;
 }
 
+form label {
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   .img-flex {
