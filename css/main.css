@@ -235,12 +235,12 @@ input {
   height: 50px;
 }
 
-input:focus {
-  outline: 0;
-}
-
 form input .placeholder {
   color: #000;
+}
+
+input:focus {
+  outline: 0;
 }
 
 .card {
