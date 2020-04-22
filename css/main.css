@@ -237,6 +237,14 @@ form input .placeholder {
   color: #000;
 }
 
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h3 {
+  font-family: "Libre Baskerville", serif;
+}
+
 .card {
   background-color: #cecece;
   border: 2px solid #000;
