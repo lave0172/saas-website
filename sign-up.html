@@ -25,9 +25,9 @@
       </h1>
       <nav class="nav unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2" role="navigation" id="nav" tabindex="0">
         <ul class="list-group-inline mega push-0">
-          <li><a class="ib gutter-1-4" href="index.html"><span>Home</span></a></li>
-          <li><a class="ib gutter-1-4" href="tour.html"><span>Tour</span></a></li>
-          <li class="active"><a class="ib gutter-1-4" href="sign-up.html"><span>Sign In / Sign Up</span></a></li>
+          <li><a class="ib gutter-1-4" href="index.html">Home</a></li>
+          <li><a class="ib gutter-1-4" href="tour.html">Tour</a></li>
+          <li class="active"><a class="ib gutter-1-4" href="sign-up.html">Sign In / Sign Up</a></li>
         </ul>
       </nav>
     </div>
@@ -49,16 +49,18 @@
         </div>
 
         <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
-          <div class="push">
-            <input id="name" placeholder="Name" required>
+          <div class="push bold">
+            <!-- <label for="name" aria-hidden="true">Name</label> -->
+            <input id="name" name="name" aria-label="name" placeholder="Name" required>
           </div>
-          <div class="push">
-            <input id="email" type="email" placeholder="Email" required>
+          <div class="push bold">
+            <input id="email" type="email" name="email" aria-label="email" placeholder="Email" required>
+
           </div>
           <div>
             <button class="button btn btn-light mega text-upper bold" type="submit">Sign In</button>
           </div>
-          <div class="island-half micro">
+          <div class="island-half micro text-white">
             <a href="#">Forgot Password?</a>
           </div>
         </form>
@@ -70,24 +72,27 @@
         <h3 class="title-white pad-b peta">Don't have an account? Sign up here</h3>
 
         <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
-          <div class="push">
-            <input id="sign-up-name" placeholder="Name" required>
+          <div class="push bold">
+            <input id="sign-up-name" name="sign-up-name" aria-label="Name" placeholder="Name" required>
+
           </div>
-          <div class="push">
-            <input id="pet-name" placeholder="Pet's Name" required>
+          <div class="push bold">
+            <input id="pet-name" name="pet-name" aria-label="pet-name" placeholder="Pet's Name" required>
+
           </div>
-          <div class="push">
-            <input id="password" type="password" placeholder="Password" required>
+          <div class="push bold">
+            <input id="password" type="password" name="password" aria-label="Password" placeholder="Password" required>
+
           </div>
-          <div class="push">
-            <input id="confirm-password" type="password" placeholder="Confirm Password" required>
+          <div class="push bold">
+            <input id="confirm-password" type="password" name="confirm-password" aria-label="Confirm Password" placeholder="Confirm Password" required>
+
           </div>
           <div>
             <button class="button btn btn-light mega text-upper bold" type="submit">Sign Up</button>
           </div>
-          <div class="island-half micro">
-            <input type="checkbox" id="agree" name="agree">
-            <p>I agree to the <a href="#">Term & Conditions</a> and <a href="#">Privacy Policy</a></p>
+          <div class="island-half micro text-white">
+            <p class="text-white">I agree to the <a href="#">Term & Conditions</a> and <a href="#">Privacy Policy</a></p>
           </div>
         </form>
       </div>
@@ -104,9 +109,9 @@
               <span class="logo-text giga icon-label text-left">PET PAW</span>
             </div>
             <ul class="list-group mega push-0">
-              <li class="active"><a class="ib gutter-1-4" href="#"><span>Home</span></a></li>
-              <li><a class="ib gutter-1-4" href="#"><span>Tour</span></a></li>
-              <li><a class="ib gutter-1-4" href="#"><span>Sign In / Sign Up</span></a></li>
+              <li class="active"><a class="ib gutter-1-4" href="#">Home</a></li>
+              <li><a class="ib gutter-1-4" href="#">Tour</a></li>
+              <li><a class="ib gutter-1-4" href="#">Sign In / Sign Up</a></li>
             </ul>
           </div>
         </div>
@@ -114,9 +119,9 @@
           <div class="title-white island giga bold">Follow Us</div>
 
           <ul class="list-group pad-bottom gutter">
-            <li class="social facebook"><a href="https://www.facebook.com/"></a></li>
-            <li class="social instagram"><a href="https://www.instagram.com/"></a></li>
-            <li class="social twitter"><a href="https://www.twitter.com/"></a></li>
+            <li class="social facebook"><a href="https://www.facebook.com/" aria-label="Read more about facebook"></a></li>
+            <li class="social instagram"><a href="https://www.instagram.com/" aria-label="Read more about instagram"></a></li>
+            <li class="social twitter"><a href="https://www.twitter.com/" aria-label="Read more about twitter"></a></li>
           </ul>
         </div>
       </div>
@@ -124,6 +129,9 @@
       <div class="line"></div>
       <div class="text-center pad-t-1-4 pad-bottom-1-4">
         <span class="push-0">© PET PAW</span>
+      </div>
+      <div class="embed embed-16by9">
+        <img class="embed-item img-flex img-fix pad-top gutter image pad-bottom" src="images/dog-in-box.jpg" alt="">
       </div>
     </footer>
   </div>

@@ -25,22 +25,27 @@ html {
   text-align: center;
 }
 
-.nav a {
-  color: #fff;
+.nav ul li a {
+  color: #000;
   text-decoration: none;
 }
 
 nav li.active a {
-  color: #414141;
+  color: #fff;
+  background-color: #000;
 }
 
 nav li a {
-  color: #fff;
   text-decoration: none;
 }
 
+header span {
+  color: #000;
+}
+
 nav li a:hover {
-  color: #414141;
+  background-color: #000;
+  color: #fff;
 }
 
 .banner {
@@ -202,16 +207,29 @@ hr {
   color: #fff;
 }
 
+.text-white a {
+  color: #fff;
+}
+
+.text-white p {
+  color: #fff;
+}
+
+.banner-content {
+  color: #fff;
+}
+
 .button {
   border-color: #fff;
   background-color: #39f7ae;
   border-radius: 50px;
   min-width: 150px;
+  color: #000;
 }
 
 input {
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .5);
   border: none;
   text-align: center;
   height: 50px;
@@ -219,6 +237,10 @@ input {
 
 input:focus {
   outline: 0;
+}
+
+form input .placeholder {
+  color: #000;
 }
 
 .card {
@@ -229,11 +251,6 @@ input:focus {
 
 .divide {
   max-width: 45em;
-  margin: 0 auto;
-}
-
-.img-fix {
-  max-width: 400px;
   margin: 0 auto;
 }
 
